@@ -52,7 +52,7 @@ public class CitatyController {
         result.addObject("citat",randomCitat);
 
         List<String> obrazky = readAllLines("obrazky.txt");
-        String randomObrazek = obrazky.get(getRandomNumber(obrazky.size()));
+        String randomObrazek = obrazky.get(getRandomNumber(obrazky.size())).trim();
         result.addObject("obrazek",randomObrazek);
 
         return result;
